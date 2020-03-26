@@ -9,7 +9,7 @@ var clat = 19.04334;
 
 //19.031396, -98.241804  //ibero puebla
 //19.035142, -98.244309  //hospital del niño poblano
-//19.020456, -98.193925  //casita
+//19.040559, -98.213572  //hospital universitario
 
 var lon = -98.241804;
 var lat = 19.031396;
@@ -17,9 +17,9 @@ var lat = 19.031396;
 var lon0 = -98.244309;
 var lat0 = 19.035142;
 
+var lon1 = -98.213572;
+var lat1 = 19.040559;
 
-var lon1 = -98.193925;
-var lat1 = 19.020456;
 
 var ww = 1024;
 var hh = 512;
@@ -74,9 +74,9 @@ var y = mercY(lat) - cy;
 var x0 = mercX(lon0) - cx;
 var y0 = mercY(lat0) - cy;
 
-
 var x1 = mercX(lon1) - cx;
 var y1 = mercY(lat1) - cy;
+
 
 var sz = 10;
 
@@ -102,11 +102,12 @@ if(d0 <= sz){
   textAlign(CENTER,CENTER);
   text("Hospital del niño poblano",x0,y0-sz);
 }
-
 if(d1 <= sz){
   fill(0);
   textSize(sz*2);
   textAlign(CENTER,CENTER);
-  text("Aqui está tu casita, te extraño :(",x1,y1-sz);
+  text("Hospital universitario",x1,y1-sz);
 }
+
+
 }
